@@ -130,3 +130,232 @@
     max-width: 650px;
     margin: 20px auto 40px;
 }
+
+.section-title {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 70px;
+    padding: 45px 20px 35px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        rgba(12, 17, 38, 0.72),
+        rgba(35, 28, 48, 0.55),
+        rgba(12, 17, 38, 0.72)
+    );
+    border-top: 1px solid rgba(217, 185, 104, 0.65);
+    border-bottom: 1px solid rgba(217, 185, 104, 0.65);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Họa tiết hai bên */
+.section-title::before,
+.section-title::after {
+    content: "✧";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #d9b968;
+    font-size: 35px;
+    text-shadow: 0 0 15px #d9b968;
+}
+
+.section-title::before {
+    left: 18px;
+}
+
+.section-title::after {
+    right: 18px;
+}
+
+/* Dòng chữ phía trên */
+.title-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.title-ornament p {
+    color: #d9b968;
+    font-size: 13px;
+    letter-spacing: 6px;
+}
+
+.title-ornament span {
+    color: #f3d58b;
+    font-size: 19px;
+}
+
+/* Tiêu đề chính */
+.section-title h2 {
+    color: #f3d58b;
+    font-size: clamp(28px, 4vw, 48px);
+    letter-spacing: 5px;
+    margin: 0;
+    text-shadow:
+        0 0 10px rgba(217, 185, 104, 0.5),
+        0 0 25px rgba(217, 185, 104, 0.25);
+}
+
+/* Đường trang trí */
+.title-decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px auto;
+}
+
+.title-decoration span {
+    width: 100px;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #d9b968
+    );
+}
+
+.title-decoration span:last-child {
+    transform: rotate(180deg);
+}
+
+.title-decoration i {
+    color: #f3d58b;
+    font-size: 22px;
+    font-style: normal;
+}
+
+/* Slogan */
+.title-slogan {
+    color: #eee5d1;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-style: italic;
+    margin-bottom: 22px;
+}
+
+/* Dòng chữ cuối */
+.title-bottom {
+    color: rgba(217, 185, 104, 0.7);
+    font-size: 10px;
+    letter-spacing: 5px;
+}
+
+/* Hiệu ứng xuất hiện */
+.section-title {
+    animation: titleReveal 1.2s ease;
+}
+
+@keyframes titleReveal {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Dòng PHÒNG TRIỂN LÃM */
+.title-ornament p {
+    color: #ffe6a3;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 214, 130, 0.7);
+}
+
+/* Biểu tượng trang trí */
+.title-ornament span {
+    color: #fff0bd;
+    text-shadow: 0 0 12px #e8bd65;
+}
+
+/* Tiêu đề chính */
+.section-title h2 {
+    color: #fff0bd;
+    font-weight: 800;
+    text-shadow:
+        0 2px 3px #000,
+        0 0 10px rgba(255, 210, 120, 0.9),
+        0 0 25px rgba(255, 190, 80, 0.55);
+}
+
+/* Slogan */
+.title-slogan {
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.95),
+        0 0 10px rgba(255, 255, 255, 0.25);
+}
+
+/* Dòng chữ cuối */
+.title-bottom {
+    color: #f5d58c;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 205, 110, 0.6);
+}
+
+/* Họa tiết */
+.title-decoration i {
+    color: #fff0bd;
+    text-shadow: 0 0 15px #e8bd65;
+}
+/* Làm chữ tiêu đề đậm hơn */
+.title-ornament p {
+    font-weight: 900;
+}
+
+.section-title h2 {
+    font-weight: 900;
+    -webkit-text-stroke: 0.8px #f3d58b;
+}
+
+.title-slogan {
+    font-weight: 800;
+}
+
+.title-bottom {
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.section-title {
+    background: rgba(0, 0, 0, 0.95);
+    border-top: 2px solid #d9b968;
+    border-bottom: 2px solid #d9b968;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    background: #000000;
+    color: #f3d58b;
+    text-align: center;
+    padding: 45px 20px;
+    border-top: 2px solid rgba(217, 185, 104, 0.7);
+    box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.6);
+}
+
+footer p {
+    color: #fff0bd;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
+    text-shadow: 0 0 8px rgba(217, 185, 104, 0.3);
+}
+
+footer a {
+    color: #f3d58b;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 12px #f3d58b;
+}
+
