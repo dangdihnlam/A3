@@ -65,63 +65,6 @@
     box-sizing: border-box;
     background: #f5f0e6;
 }
-
-/* ===== TIÊU ĐỀ PHÒNG TRIỂN LÃM ===== */
-.section-title {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto 45px;
-    text-align: center;
-}
-
-.section-title p {
-    color: #a17b42;
-    font-size: 15px;
-    letter-spacing: 5px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.section-title h2 {
-    color: #182039;
-    font-size: 38px;
-    letter-spacing: 3px;
-    margin-bottom: 18px;
-}
-
-.section-title span {
-    display: block;
-    color: #76664f;
-    font-size: 17px;
-    line-height: 1.7;
-}
-
-/* ===== BỐ CỤC CÁC NHÂN VẬT ===== */
-.character-grid {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 30px;
-}
-
-/* ===== HIỂN THỊ TRÊN MÀN HÌNH NHỎ ===== */
-@media (max-width: 1000px) {
-    .character-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .character-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .section-title h2 {
-        font-size: 26px;
-    }
-}
 .exhibition-description {
     color: #d4c8a7;
     font-size: 17px;
@@ -130,7 +73,6 @@
     max-width: 650px;
     margin: 20px auto 40px;
 }
-
 .section-title {
     position: relative;
     max-width: 900px;
@@ -330,32 +272,101 @@
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
 }
 
+
+/* FOOTER TĨNH */
 footer {
-    background: #000000;
-    color: #f3d58b;
+    width: 90%;
+    max-width: 900px;
+    margin: 15px auto;
+    padding: 5px 10px;
+
+    background: #080b18;
+    border: 1px solid #b99a55;
+    border-radius: 8px;
+
     text-align: center;
-    padding: 45px 20px;
-    border-top: 2px solid rgba(217, 185, 104, 0.7);
-    box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.6);
+    color: #e8d4a0;
+    box-sizing: border-box;
 }
 
 footer p {
-    color: #fff0bd;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    line-height: 1.8;
-    text-shadow: 0 0 8px rgba(217, 185, 104, 0.3);
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+/* =========================
+   PHẦN LIÊN HỆ
+========================= */
+
+#lien-he {
+    padding: 40px 6px;
+    background: rgba(5, 8, 20, 0.85);
+    border-top: 1px solid rgba(217, 185, 104, 0.4);
+    border-bottom: 1px solid rgba(217, 185, 104, 0.4);
 }
 
-footer a {
+#lien-he .container {
+    max-width: 650px; /* Thu hẹp chiều ngang toàn bộ phần liên hệ */
+    margin: auto;
+    text-align: center;
+}
+
+#lien-he .contact {
+    max-width: 400px; /* Thu nhỏ chiều ngang các khung Email, GitHub, Lớp */
+    margin: auto;
+}
+
+/* TIÊU ĐỀ */
+#lien-he h2 {
     color: #f3d58b;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    text-shadow: 0 0 12px rgba(217, 185, 104, 0.35);
+}
+
+/* DANH SÁCH LIÊN HỆ */
+#lien-he .contact {
+    max-width: 500px; 
+    margin: auto;
+}
+
+/* TỪNG DÒNG LIÊN HỆ */
+#lien-he .contact li {
+    background: rgba(15, 20, 40, 0.85);
+    border: 1px solid rgba(217, 185, 104, 0.35);
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: #eee5d1;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+/* NHÃN EMAIL, GITHUB, LỚP */
+#lien-he .contact strong {
+    color: #f3d58b;
+    margin-right: 8px;
+    letter-spacing: 1px;
+}
+
+/* LIÊN KẾT */
+#lien-he .contact a {
+    color: #e8d4a0;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
-footer a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 12px #f3d58b;
+/* HIỆU ỨNG KHI DI CHUỘT */
+#lien-he .contact li:hover {
+    border-color: #e8c978;
+    transform: translateY(-4px);
+    box-shadow: 0 0 15px rgba(217, 185, 104, 0.15);
+    background: rgba(25, 30, 52, 0.95);
 }
 
+#lien-he .contact a:hover {
+    color: #fff4ce;
+    text-shadow: 0 0 10px rgba(243, 213, 139, 0.5);
+}
