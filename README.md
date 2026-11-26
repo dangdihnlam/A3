@@ -36,7 +36,7 @@ Sau đó mở file `index.html` bằng trình duyệt.
 ## Phiên bản
 
 - **v1.0:** bản đầu tiên
-- **v2.0:** (đang cập nhật)
+- **v2.0:** bản bàn giao
 
 ## Liên hệ
 
